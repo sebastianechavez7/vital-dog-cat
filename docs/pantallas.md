@@ -35,4 +35,4 @@ Los nombres de los integrantes provienen del README. Este reparto es una propues
 
 ## Pendiente de la entrega grupal
 
-Confirmar el reparto con los integrantes, comparar las páginas con Figma y reemplazar los recursos provisionales con las exportaciones originales. La implementación está en la rama local `feature/maquetado-html`; la publicación en GitHub y la revisión cruzada real por un compañero no se han realizado.
+Confirmar el reparto con los integrantes, comparar las páginas con Figma y reemplazar los recursos provisionales con las exportaciones originales. La implementación está publicada en la rama `feature/maquetado-html` de GitHub. La apertura del Pull Request está pendiente: la API de GitHub respondió `Forbidden` en este entorno. La revisión cruzada debe realizarla un compañero.

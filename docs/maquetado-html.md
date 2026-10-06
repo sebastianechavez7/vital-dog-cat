@@ -40,4 +40,4 @@ La entrega contiene únicamente HTML e imágenes, sin CSS ni JavaScript. La apar
 
 Los formularios son maquetas: no hay backend web, persistencia ni inicio de sesión real en HTML. El proyecto Java adjunto no fue modificado. Las pantallas de ventas amplían los botones del panel que aún no tienen vistas implementadas en el ZIP.
 
-Falta comparar con Figma, reemplazar el identificador textual provisional por el logo exportado. El reparto de integrantes es propuesto; no se atribuyen aportes ni revisiones que no han ocurrido. La rama local es `feature/maquetado-html`; no se ha publicado ni abierto un Pull Request. Esos pasos de entrega y revisión grupal siguen pendientes.
+Falta comparar con Figma, reemplazar el identificador textual provisional por el logo exportado. El reparto de integrantes es propuesto; no se atribuyen aportes ni revisiones que no han ocurrido. La rama `feature/maquetado-html` está publicada en GitHub. No se pudo abrir el Pull Request desde este entorno porque la API respondió `Forbidden`. La apertura del PR y la revisión real por un compañero siguen pendientes.
