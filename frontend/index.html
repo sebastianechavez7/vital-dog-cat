@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio | Vital Dog Cat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap">
+    <link rel="stylesheet" href="css/estilos.css">
   </head>
-  <body>
+  <body class="pagina pagina-publica">
     <!-- Encabezado y navegación principal -->
     <header id="encabezado" class="encabezado">
       <a href="index.html"><img src="img/logo.svg" alt="Vital Dog Cat: volver al inicio" width="240" height="60"></a>
@@ -33,9 +37,9 @@
       <!-- Presentación del equipo -->
       <section id="integrantes" class="seccion-equipo">
         <h2>Integrantes</h2>
-        <ul>
-          <li>Luis Sebastian Echavez Carreño</li>
-          <li>Erik Sebastian Gonzalez Estupiñan</li>
+        <ul class="lista-tarjetas">
+          <li class="tarjeta">Luis Sebastian Echavez Carreño</li>
+          <li class="tarjeta">Erik Sebastian Gonzalez Estupiñan</li>
         </ul>
       </section>
       <hr>
@@ -46,21 +50,24 @@
       <!-- Tres módulos con la misma estructura -->
       <section id="modulos" class="seccion-modulos">
         <h2>Módulos del sistema</h2>
-        <article class="tarjeta-modulo">
-          <h3>Inventario</h3>
-          <p>Consulte productos, existencias, proveedores y fechas de vencimiento.</p>
-          <a href="inventario.html">VER PRODUCTOS</a>
-        </article>
-        <article class="tarjeta-modulo">
-          <h3>Usuarios</h3>
-          <p>Consulte los usuarios y los roles de administrador y empleado.</p>
-          <a href="usuarios.html">USUARIOS</a>
-        </article>
-        <article class="tarjeta-modulo">
-          <h3>Proveedores</h3>
-          <p>Consulte los nombres, teléfonos y empresas de los proveedores.</p>
-          <a href="proveedores.html">PROVEEDORES</a>
-        </article>
+        <div class="galeria-modulos">
+          <article class="tarjeta tarjeta-modulo destacada">
+            <span class="insignia">Destacado</span>
+            <h3>Inventario</h3>
+            <p>Consulte productos, existencias, proveedores y fechas de vencimiento.</p>
+            <a href="inventario.html">VER PRODUCTOS</a>
+          </article>
+          <article class="tarjeta tarjeta-modulo">
+            <h3>Usuarios</h3>
+            <p>Consulte los usuarios y los roles de administrador y empleado.</p>
+            <a href="usuarios.html">USUARIOS</a>
+          </article>
+          <article class="tarjeta tarjeta-modulo">
+            <h3>Proveedores</h3>
+            <p>Consulte los nombres, teléfonos y empresas de los proveedores.</p>
+            <a href="proveedores.html">PROVEEDORES</a>
+          </article>
+        </div>
       </section>
       <section id="pasos" class="seccion-pasos">
         <h2>Cómo utilizar la aplicación</h2>

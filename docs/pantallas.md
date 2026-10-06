@@ -1,5 +1,6 @@
 # Inventario de pantallas — Vital Dog Cat
 
+> Documento de la primera actividad de HTML. La nueva actividad añade CSS externo; consulte `docs/estilos-css.md`.
 Maquetado HTML sin CSS ni JavaScript. Se compararon las ocho capturas del prototipo enviadas por el usuario con los textos, campos, columnas y orden del HTML. Los originales están en `docs/prototipo/`.
 
 ## Reparto propuesto

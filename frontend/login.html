@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de sesión | Vital Dog Cat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap">
+    <link rel="stylesheet" href="css/estilos.css">
   </head>
-  <body>
+  <body class="pagina pagina-login">
     <!-- Identidad de la veterinaria -->
     <header id="encabezado" class="encabezado">
       <a href="index.html"><img src="img/logo.svg" alt="Logo original de Vital Dog Cat Veterinaria: volver al inicio" width="360" height="166"></a>
@@ -18,6 +22,18 @@
     <!-- Inicio de sesión -->
     <main id="contenido" class="contenido">
       <section id="inicio-sesion" class="seccion-formulario">
+        <svg class="icono-acceso" viewBox="0 0 180 110" aria-hidden="true" focusable="false">
+          <g class="personas-fondo">
+            <circle cx="45" cy="30" r="25"/>
+            <circle cx="135" cy="30" r="25"/>
+            <path d="M5 100 Q5 55 45 55 Q85 55 85 100 Z"/>
+            <path d="M95 100 Q95 55 135 55 Q175 55 175 100 Z"/>
+          </g>
+          <g class="persona-frente">
+            <circle cx="90" cy="42" r="28"/>
+            <path d="M40 110 Q40 65 90 65 Q140 65 140 110 Z"/>
+          </g>
+        </svg>
         <h1>Inicio de sesión</h1>
         <form action="#inicio-sesion" method="post">
           <fieldset>
@@ -31,7 +47,7 @@
               <input type="password" id="contrasenia" name="contrasenia" autocomplete="current-password" required>
             </p>
           </fieldset>
-          <p><button type="submit">Iniciar</button></p>
+          <p><button class="boton" type="submit">Iniciar</button></p>
         </form>
       </section>
     </main>
