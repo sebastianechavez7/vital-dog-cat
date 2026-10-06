@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro | Vital Dog Cat</title>
+  </head>
+  <body>
+    <!-- Encabezado y navegación principal -->
+    <header id="encabezado" class="encabezado">
+      <a href="index.html"><img src="img/logo.svg" alt="Vital Dog Cat: volver al inicio" width="240" height="60"></a>
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="login.html">Inicio de sesión</a></li>
+          <li><a href="registro.html" aria-current="page">Registro</a></li>
+          <li><a href="admin.html">Panel principal</a></li>
+          <li><a href="inventario.html">Inventario</a></li>
+          <li><a href="usuarios.html">Usuarios</a></li>
+          <li><a href="proveedores.html">Proveedores</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="multimedia.html">Multimedia</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Contenido principal -->
+    <main id="contenido" class="contenido">
+      <h1>Registro</h1>
+      <section id="registro" class="seccion-formulario">
+        <h2>Datos de registro</h2>
+        <p>Maqueta de práctica: este formulario todavía no guarda datos. Use datos ficticios.</p>
+        <form action="#registro" method="post">
+          <fieldset>
+            <legend>Datos de registro</legend>
+            <p>
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" autocomplete="name" maxlength="100" required>
+            </p>
+            <p>
+              <label for="correo">Correo electrónico</label>
+              <input type="email" id="correo" name="correo" autocomplete="email" required>
+            </p>
+            <p>
+              <label for="contrasenia">Contraseña</label>
+              <input type="password" id="contrasenia" name="contrasenia" autocomplete="new-password" minlength="8" required>
+            </p>
+            <p>
+              <label for="fecha-nacimiento">Fecha de nacimiento</label>
+              <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+            </p>
+            <p>
+              <label for="ciudad">Ciudad</label>
+              <select id="ciudad" name="ciudad" required>
+                <option value="">Seleccione una opción</option>
+                <option value="cucuta">Cúcuta</option>
+                <option value="bogota">Bogotá</option>
+                <option value="medellin">Medellín</option>
+              </select>
+            </p>
+            <fieldset>
+              <legend>Tipo de usuario</legend>
+              <input type="radio" id="administrador" name="tipo-usuario" value="administrador" required>
+              <label for="administrador">Administrador</label>
+              <input type="radio" id="empleado" name="tipo-usuario" value="empleado" required>
+              <label for="empleado">Empleado</label>
+            </fieldset>
+            <p>
+              <input type="checkbox" id="acepto-terminos" name="acepto-terminos" value="si" required>
+              <label for="acepto-terminos">Acepto los términos de este ejercicio de registro con datos ficticios.</label>
+            </p>
+          </fieldset>
+          <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+          </p>
+        </form>
+      </section>
+      <p><a href="login.html">Volver al inicio de sesión</a></p>
+    </main>
+    <!-- Pie de página -->
+    <footer class="pie-pagina">
+      <p><small>&copy; 2026 – Vital Dog Cat</small></p>
+    </footer>
+  </body>
+</html>
