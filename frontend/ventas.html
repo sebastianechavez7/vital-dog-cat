@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrar venta | Vital Dog Cat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap">
+    <link rel="stylesheet" href="css/estilos.css">
   </head>
-  <body>
+  <body class="pagina pagina-sistema pagina-venta">
     <!-- Encabezado del prototipo -->
     <header id="encabezado" class="encabezado">
       <p>Vital Dog Cat Inventory</p>
-      <nav aria-label="Menú del sistema">
-        <ul>
-          <li><a href="admin.html">INICIO</a></li>
-          <li><a href="inventario.html">INVENTARIO</a></li>
-          <li><a href="usuarios.html">USUARIOS</a></li>
-          <li><a href="login.html">Cerrar sesion</a></li>
-          <li><a href="index.html">SALIR</a></li>
-        </ul>
-      </nav>
     </header>
+    <!-- Barra lateral del sistema -->
+    <nav class="menu-lateral" aria-label="Menú del sistema">
+      <ul class="menu">
+        <li><a href="admin.html"><span class="icono-menu" aria-hidden="true"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M3 15 16 3 29 15 26 18 24 16v13h-6v-9h-4v9H8V16l-2 2Z"/></svg></span><span>INICIO</span></a></li>
+        <li><a href="inventario.html"><span class="icono-menu" aria-hidden="true"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M3 7h26v22H3Z"/><path class="trazo-icono" d="M2 7 7 3h18l5 4M16 7v22"/></svg></span><span>INVENTARIO</span></a></li>
+        <li><a href="usuarios.html"><span class="icono-menu" aria-hidden="true"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="7" cy="10" r="5"/><circle cx="25" cy="10" r="5"/><path d="M0 27V22q0-7 7-7t7 7v5M18 27V22q0-7 7-7t7 7v5"/><circle cx="16" cy="13" r="6"/><path d="M7 31v-5q0-8 9-8t9 8v5Z"/></svg></span><span>USUARIOS</span></a></li>
+        <li><a href="login.html"><span class="icono-menu" aria-hidden="true">⏻</span><span>Cerrar sesion</span></a></li>
+        <li><a href="index.html"><span class="icono-menu" aria-hidden="true">⏻</span><span>SALIR</span></a></li>
+      </ul>
+    </nav>
     <!-- Contenido de la pantalla -->
     <main id="contenido" class="contenido">
       <h1>REGISTRAR VENTA</h1>
@@ -45,9 +50,9 @@
             <input type="date" id="fecha" name="fecha" required>
           </p>
         </fieldset>
-        <p><button type="submit">REGISTRAR VENTA</button></p>
+        <p><button class="boton" type="submit">REGISTRAR VENTA</button></p>
       </form>
-      <p><a href="admin.html" aria-label="Volver al inicio del sistema">Volver</a></p>
+      <p><a href="admin.html" class="boton-volver" aria-label="Volver al inicio del sistema">↶</a></p>
     </main>
     <!-- Pie de página -->
     <footer class="pie-pagina">

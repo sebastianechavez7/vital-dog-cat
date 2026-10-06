@@ -1,5 +1,6 @@
 # Esquemas de bloques
 
+> Documento de la primera actividad de HTML. La nueva actividad añade CSS externo; consulte `docs/estilos-css.md`.
 ## Estructura común
 
 ```text

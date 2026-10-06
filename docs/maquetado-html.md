@@ -1,5 +1,6 @@
 # Entrega de maquetado HTML
 
+> Documento de la primera actividad de HTML. La nueva actividad añade CSS externo; consulte `docs/estilos-css.md`.
 ## Abrir las páginas
 
 Abra `frontend/index.html` en un navegador. No requiere NetBeans, Java, MySQL ni instalar dependencias. Todos los enlaces internos usan rutas relativas.
