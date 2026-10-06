@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Proveedor | Vital Dog Cat</title>
+  </head>
+  <body>
+    <!-- Encabezado y navegación principal -->
+    <header id="encabezado" class="encabezado">
+      <a href="index.html"><img src="img/logo.svg" alt="Vital Dog Cat: volver al inicio" width="240" height="60"></a>
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="login.html">Inicio de sesión</a></li>
+          <li><a href="registro.html">Registro</a></li>
+          <li><a href="admin.html">Panel principal</a></li>
+          <li><a href="inventario.html">Inventario</a></li>
+          <li><a href="usuarios.html">Usuarios</a></li>
+          <li><a href="proveedores.html">Proveedores</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="multimedia.html">Multimedia</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Contenido principal -->
+    <main id="contenido" class="contenido">
+      <h1>Nuevo Proveedor</h1>
+      <section id="alta" class="seccion-formulario">
+        <h2>Datos del registro</h2>
+        <p>Maqueta de práctica: este formulario todavía no guarda datos. Use datos ficticios.</p>
+        <form action="#alta" method="post">
+          <fieldset>
+            <legend>Datos del registro</legend>
+            <p>
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required>
+            </p>
+            <p>
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" required>
+            </p>
+            <p>
+              <label for="empresa">Empresa</label>
+              <input type="text" id="empresa" name="empresa" required>
+            </p>
+          </fieldset>
+          <p>
+            <button type="submit">Guardar</button>
+            <button type="reset">Limpiar</button>
+          </p>
+        </form>
+      </section>
+      <p><a href="proveedores.html">Cancelar y volver</a></p>
+    </main>
+    <!-- Pie de página -->
+    <footer class="pie-pagina">
+      <p><small>&copy; 2026 – Vital Dog Cat</small></p>
+    </footer>
+  </body>
+</html>

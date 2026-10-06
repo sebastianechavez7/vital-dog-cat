@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia | Vital Dog Cat</title>
+  </head>
+  <body>
+    <!-- Encabezado y navegación principal -->
+    <header id="encabezado" class="encabezado">
+      <a href="index.html"><img src="img/logo.svg" alt="Vital Dog Cat: volver al inicio" width="240" height="60"></a>
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="login.html">Inicio de sesión</a></li>
+          <li><a href="registro.html">Registro</a></li>
+          <li><a href="admin.html">Panel principal</a></li>
+          <li><a href="inventario.html">Inventario</a></li>
+          <li><a href="usuarios.html">Usuarios</a></li>
+          <li><a href="proveedores.html">Proveedores</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="multimedia.html" aria-current="page">Multimedia</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Contenido principal -->
+    <main id="contenido" class="contenido">
+      <h1>Multimedia</h1>
+      <!-- id="video" permite enlazar esta sección; class="seccion-video" agrupa el bloque para el futuro CSS. -->
+      <section id="video" class="seccion-video">
+        <h2>Video de referencia</h2>
+        <p>Video público de ejemplo para practicar contenido incrustado.</p>
+        <!-- class="video-incrustado" identifica el reproductor para el futuro CSS. -->
+        <iframe class="video-incrustado" src="https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ" title="Big Buck Bunny: video de ejemplo" width="560" height="315" loading="lazy" allowfullscreen></iframe>
+        <p><a href="https://www.youtube.com/watch?v=aqz-KE-bpKQ" target="_blank" rel="noopener noreferrer">Abrir el video en YouTube</a></p>
+      </section>
+      <!-- class="seccion-mapa" agrupa la ubicación para el futuro CSS. -->
+      <section id="ubicacion" class="seccion-mapa">
+        <h2>Universidad de Pamplona</h2>
+        <p>Universidad de Pamplona, sede principal en Pamplona, Norte de Santander.</p>
+        <iframe src="https://www.google.com/maps?q=Universidad%20de%20Pamplona%2C%20Pamplona%2C%20Norte%20de%20Santander%2C%20Colombia&amp;output=embed" title="Mapa de la Universidad de Pamplona, sede principal" width="560" height="315" loading="lazy"></iframe>
+      </section>
+    </main>
+    <!-- Pie de página -->
+    <footer class="pie-pagina">
+      <p><small>&copy; 2026 – Vital Dog Cat</small></p>
+    </footer>
+  </body>
+</html>

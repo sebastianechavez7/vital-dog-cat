@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar usuario | Vital Dog Cat</title>
+  </head>
+  <body>
+    <!-- Encabezado del prototipo -->
+    <header id="encabezado" class="encabezado">
+      <p>Vital Dog Cat Inventory</p>
+      <nav aria-label="Menú del sistema">
+        <ul>
+          <li><a href="admin.html">INICIO</a></li>
+          <li><a href="inventario.html">INVENTARIO</a></li>
+          <li><a href="usuarios.html" aria-current="page">USUARIOS</a></li>
+          <li><a href="login.html">Cerrar sesion</a></li>
+          <li><a href="index.html">SALIR</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Contenido de la pantalla -->
+    <main id="contenido" class="contenido">
+      <h1>USUARIOS</h1>
+      <section id="editar-usuario" class="seccion-formulario">
+        <h2>Editar usuario</h2>
+        <form id="edicion-usuario" class="formulario" action="#edicion-usuario" method="post">
+          <fieldset>
+            <legend>Datos del usuario</legend>
+            <p>
+              <label for="nombre">INGRESE NOMBRE DEL USUARIO</label>
+              <input type="text" id="nombre" name="nombre" placeholder="INGRESE NOMBRE DEL USUARIO" maxlength="100" required>
+            </p>
+            <p>
+              <label for="tipo-usuario">SELECCIONE EL TIPO DE USUARIO</label>
+              <select id="tipo-usuario" name="tipo-usuario" required>
+                <option value="">SELECCIONE EL TIPO DE USUARIO</option>
+                <option value="administrador">Administrador</option>
+                <option value="empleado">Empleado</option>
+              </select>
+            </p>
+          </fieldset>
+          <p><button type="submit">Guardar</button></p>
+        </form>
+      </section>
+      <p><a href="usuarios.html">Cancelar y volver</a></p>
+    </main>
+    <!-- Pie de página -->
+    <footer class="pie-pagina">
+      <p><small>&copy; 2026 – Vital Dog Cat</small></p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios | Vital Dog Cat</title>
+  </head>
+  <body>
+    <!-- Encabezado del prototipo -->
+    <header id="encabezado" class="encabezado">
+      <p>Vital Dog Cat Inventory</p>
+      <nav aria-label="Menú del sistema">
+        <ul>
+          <li><a href="admin.html">INICIO</a></li>
+          <li><a href="inventario.html">INVENTARIO</a></li>
+          <li><a href="usuarios.html" aria-current="page">USUARIOS</a></li>
+          <li><a href="login.html">Cerrar sesion</a></li>
+          <li><a href="index.html">SALIR</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Contenido de la pantalla -->
+    <main id="contenido" class="contenido">
+      <h1>USUARIOS</h1>
+      <section id="listado" class="seccion-listado">
+        <h2>Listado de usuarios</h2>
+        <table>
+          <caption>Usuarios y roles</caption>
+          <thead>
+            <tr>
+              <th scope="col">Usuario</th>
+              <th scope="col">Rol</th>
+              <th scope="col">Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Admin1</td>
+              <td>Administrador</td>
+              <td><a href="editar-usuario.html?usuario=Admin1">Editar</a></td>
+            </tr>
+            <tr>
+              <td>empleado1</td>
+              <td>Empleado</td>
+              <td><a href="editar-usuario.html?usuario=empleado1">Editar</a> <button type="button" disabled>Borrar</button></td>
+            </tr>
+            <tr>
+              <td>empleado2</td>
+              <td>Empleado</td>
+              <td><a href="editar-usuario.html?usuario=empleado2">Editar</a> <button type="button" disabled>Borrar</button></td>
+            </tr>
+          </tbody>
+        </table>
+        <p><a href="usuarios.html">ACTUALIZAR LISTA</a></p>
+        <p><a href="nuevo-usuario.html">AGREGAR USUARIO</a></p>
+      </section>
+      <p><a href="admin.html" aria-label="Volver al inicio del sistema">Volver</a></p>
+    </main>
+    <!-- Pie de página -->
+    <footer class="pie-pagina">
+      <p><small>&copy; 2026 – Vital Dog Cat</small></p>
+    </footer>
+  </body>
+</html>
