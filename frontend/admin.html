@@ -3,61 +3,47 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panel principal | Vital Dog Cat</title>
+    <title>Inicio del sistema | Vital Dog Cat</title>
   </head>
   <body>
-    <!-- Encabezado y navegación principal -->
+    <!-- Encabezado del prototipo -->
     <header id="encabezado" class="encabezado">
-      <a href="index.html"><img src="img/logo.svg" alt="Vital Dog Cat: volver al inicio" width="240" height="60"></a>
-      <nav aria-label="Navegación principal">
+      <p>Vital Dog Cat Inventory</p>
+      <nav aria-label="Menú del sistema">
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="login.html">Inicio de sesión</a></li>
-          <li><a href="registro.html">Registro</a></li>
-          <li><a href="admin.html" aria-current="page">Panel principal</a></li>
-          <li><a href="inventario.html">Inventario</a></li>
-          <li><a href="usuarios.html">Usuarios</a></li>
-          <li><a href="proveedores.html">Proveedores</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="multimedia.html">Multimedia</a></li>
+          <li><a href="admin.html" aria-current="page">INICIO</a></li>
+          <li><a href="inventario.html">INVENTARIO</a></li>
+          <li><a href="usuarios.html">USUARIOS</a></li>
+          <li><a href="login.html">Cerrar sesion</a></li>
+          <li><a href="index.html">SALIR</a></li>
         </ul>
       </nav>
     </header>
-    <!-- Contenido principal -->
+    <!-- Contenido de la pantalla -->
     <main id="contenido" class="contenido">
       <section id="panel" class="seccion-panel">
-        <h1>BIENVENIDO AL SISTEMA DE INVENTARIO</h1>
-        <p>Vital Dog Cat Inventory</p>
-        <nav aria-label="Menú del sistema">
+        <h1>BIENVENIDO “ADMINISTRADOR1” AL SISTEMA DE INVENTARIO</h1>
+        <nav aria-label="Funciones principales">
           <ul>
-            <li><a href="inventario.html">INVENTARIO</a></li>
-            <li><a href="usuarios.html">USUARIOS</a></li>
-            <li><a href="proveedores.html">PROVEEDORES</a></li>
-            <li><a href="login.html">Cerrar sesion</a></li>
-            <li><a href="index.html">SALIR</a></li>
+            <li><a href="ventas.html">REGISTRAR VENTA</a></li>
+            <li><a href="registro-ventas.html">VER REGISTRO DE VENTAS</a></li>
+            <li><a href="nuevo-producto.html">AGREGAR PRODUCTO</a></li>
+            <li><a href="inventario.html">VER PRODUCTOS</a></li>
           </ul>
         </nav>
-      </section>
-      <section id="funciones" class="seccion-funciones">
-        <h2>Funciones principales</h2>
-        <ul>
-          <li><a href="ventas.html">REGISTRAR VENTA</a></li>
-          <li><a href="nuevo-producto.html">AGREGAR PRODUCTO</a></li>
-          <li><a href="registro-ventas.html">VER REGISTRO DE VENTAS</a></li>
-          <li><a href="inventario.html">VER PRODUCTOS</a></li>
-        </ul>
       </section>
       <aside class="resumen-inventario" aria-labelledby="titulo-resumen">
         <h2 id="titulo-resumen">Resumen de inventario</h2>
         <dl>
-          <dt>TOTAL PRODUCTOS</dt>
-          <dd>Sin datos cargados.</dd>
-          <dt>POR VENCER</dt>
-          <dd>Sin datos cargados.</dd>
-          <dt>STOCK BAJO</dt>
-          <dd>Sin datos cargados.</dd>
+          <dt>TOTAL PRODUCTOS:</dt>
+          <dd>*********</dd>
+          <dt>POR VENCER:</dt>
+          <dd>*********</dd>
+          <dt>STACK BAJO:</dt>
+          <dd>*********</dd>
         </dl>
       </aside>
+      <p><a href="index.html" aria-label="Volver a la página de inicio">Volver</a></p>
     </main>
     <!-- Pie de página -->
     <footer class="pie-pagina">

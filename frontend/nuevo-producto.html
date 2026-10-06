@@ -3,74 +3,57 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuevo Producto | Vital Dog Cat</title>
+    <title>Registrar producto | Vital Dog Cat</title>
   </head>
   <body>
-    <!-- Encabezado y navegación principal -->
+    <!-- Encabezado del prototipo -->
     <header id="encabezado" class="encabezado">
-      <a href="index.html"><img src="img/logo.svg" alt="Vital Dog Cat: volver al inicio" width="240" height="60"></a>
-      <nav aria-label="Navegación principal">
+      <p>Vital Dog Cat Inventory</p>
+      <nav aria-label="Menú del sistema">
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="login.html">Inicio de sesión</a></li>
-          <li><a href="registro.html">Registro</a></li>
-          <li><a href="admin.html">Panel principal</a></li>
-          <li><a href="inventario.html">Inventario</a></li>
-          <li><a href="usuarios.html">Usuarios</a></li>
-          <li><a href="proveedores.html">Proveedores</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="multimedia.html">Multimedia</a></li>
+          <li><a href="admin.html">INICIO</a></li>
+          <li><a href="inventario.html">INVENTARIO</a></li>
+          <li><a href="usuarios.html">USUARIOS</a></li>
+          <li><a href="login.html">Cerrar sesion</a></li>
+          <li><a href="index.html">SALIR</a></li>
         </ul>
       </nav>
     </header>
-    <!-- Contenido principal -->
+    <!-- Contenido de la pantalla -->
     <main id="contenido" class="contenido">
-      <h1>Nuevo Producto</h1>
-      <section id="alta" class="seccion-formulario">
-        <h2>Datos del registro</h2>
-        <p>Maqueta de práctica: este formulario todavía no guarda datos. Use datos ficticios.</p>
-        <form action="#alta" method="post">
-          <fieldset>
-            <legend>Datos del registro</legend>
-            <p>
-              <label for="nombre">Nombre</label>
-              <input type="text" id="nombre" name="nombre" maxlength="100" required>
-            </p>
-            <p>
-              <label for="precio-compra">Precio de Compra</label>
-              <input type="number" id="precio-compra" name="precio-compra" min="0" step="0.01" required>
-            </p>
-            <p>
-              <label for="precio-venta">Precio de Venta</label>
-              <input type="number" id="precio-venta" name="precio-venta" min="0" step="0.01" required>
-            </p>
-            <p>
-              <label for="stock">Stock Inicial</label>
-              <input type="number" id="stock" name="stock" min="0" step="1" required>
-            </p>
-            <p>
-              <label for="categoria">Categoría</label>
-              <input type="text" id="categoria" name="categoria" required>
-            </p>
-            <p>
-              <label for="proveedor">Proveedor</label>
-              <select id="proveedor" name="proveedor" required>
-                <option value="">Seleccione una opción</option>
-                <option value="demostracion">Proveedor de demostración</option>
-              </select>
-            </p>
-            <p>
-              <label for="vencimiento">Fecha Vencimiento (YYYY-MM-DD)</label>
-              <input type="date" id="vencimiento" name="vencimiento" required>
-            </p>
-          </fieldset>
+      <h1>REGISTRAR PRODUCTO</h1>
+      <form id="registro-producto" class="formulario" action="#registro-producto" method="post">
+        <fieldset>
+          <legend>Datos del producto</legend>
           <p>
-            <button type="submit">Guardar</button>
-            <button type="reset">Limpiar</button>
+            <label for="nombre">Nombre del producto</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre del producto" maxlength="100" required>
           </p>
-        </form>
-      </section>
-      <p><a href="inventario.html">Cancelar y volver</a></p>
+          <p>
+            <label for="precio">Precio unitario</label>
+            <input type="number" id="precio" name="precio" placeholder="Precio unitario" min="0" step="0.01" required>
+          </p>
+          <p>
+            <label for="categoria">Categoria</label>
+            <select id="categoria" name="categoria" required>
+              <option value="">Categoria</option>
+              <option value="alimentos">Alimentos</option>
+              <option value="medicamentos">Medicamentos</option>
+              <option value="accesorios">Accesorios</option>
+            </select>
+          </p>
+          <p>
+            <label for="cantidad">Cantidad en stock</label>
+            <input type="number" id="cantidad" name="cantidad" min="0" step="1" required>
+          </p>
+          <p>
+            <label for="vencimiento">Fecha de vencimiento</label>
+            <input type="date" id="vencimiento" name="vencimiento" required>
+          </p>
+        </fieldset>
+        <p><button type="submit">REGISTRAR PRODUCTO</button></p>
+      </form>
+      <p><a href="admin.html" aria-label="Volver al inicio del sistema">Volver</a></p>
     </main>
     <!-- Pie de página -->
     <footer class="pie-pagina">

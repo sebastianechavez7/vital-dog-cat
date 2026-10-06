@@ -1,38 +1,47 @@
 # Inventario de pantallas — Vital Dog Cat
 
-Entrega de maquetado HTML, sin CSS ni JavaScript, basada en la guía suministrada. La referencia disponible es `veterinaria(avance2).zip`, proyecto Java Swing de NetBeans. No se suministró un enlace o archivo de Figma; la coincidencia con ese prototipo queda pendiente de revisión.
+Maquetado HTML sin CSS ni JavaScript. Se compararon las ocho capturas del prototipo enviadas por el usuario con los textos, campos, columnas y orden del HTML. Los originales están en `docs/prototipo/`.
 
-## Pantallas y reparto propuesto
+## Reparto propuesto
 
-Los nombres de los integrantes provienen del README. Este reparto es una propuesta para organizar la entrega, no una afirmación de que cada integrante ya realizó o revisó estas páginas.
+Los integrantes provienen del README. Este reparto debe confirmarse con el equipo; no atribuye aportes ni revisiones que no han ocurrido.
 
-| Página | Pantalla o ejercicio | Referencia | Responsable propuesto |
+| Página en frontend/ | Pantalla | Referencia en docs/prototipo/ | Responsable propuesto |
 | --- | --- | --- | --- |
-| `frontend/index.html` | Inicio, presentación, integrantes y módulos | README y ejercicios 1–6 | Luis Sebastian Echavez Carreño |
-| `frontend/login.html` | Inicio de sesión | `Login_vista.java` | Luis Sebastian Echavez Carreño |
-| `frontend/admin.html` | Panel principal | `Admin_vista.java` | Luis Sebastian Echavez Carreño |
-| `frontend/inventario.html` | Gestión de inventario | `Inventario_vista.java` | Luis Sebastian Echavez Carreño |
-| `frontend/nuevo-producto.html` | Nuevo producto | Diálogo de `Controlador.java` | Luis Sebastian Echavez Carreño |
-| `frontend/usuarios.html` | Gestión de usuarios | `Usuarios_vista.java` | Erik Sebastian Gonzalez Estupiñan |
-| `frontend/nuevo-usuario.html` | Nuevo usuario | Diálogo de `Usuarios_vista.java` | Erik Sebastian Gonzalez Estupiñan |
-| `frontend/proveedores.html` | Gestión de proveedores | `Proveedores_vista.java` | Erik Sebastian Gonzalez Estupiñan |
-| `frontend/nuevo-proveedor.html` | Nuevo proveedor | Diálogo de `Controlador.java` | Erik Sebastian Gonzalez Estupiñan |
-| `frontend/registro.html` | Registro con los campos de la clase 7 | Ejercicio de la guía, adicional a NetBeans | Erik Sebastian Gonzalez Estupiñan |
-| `frontend/contacto.html` | Contacto y enlace de regreso | Ejercicio de la clase 3 | Erik Sebastian Gonzalez Estupiñan |
-| `frontend/multimedia.html` | Video, mapa y atributos globales | Ejercicio de la clase 8 | Luis Sebastian Echavez Carreño |
-| `frontend/ventas.html` | Registrar venta | Extensión del botón del panel; no hay vista desarrollada en el ZIP | Luis Sebastian Echavez Carreño |
-| `frontend/registro-ventas.html` | Registro de ventas | Extensión del botón del panel y modelo de venta; no hay vista desarrollada en el ZIP | Luis Sebastian Echavez Carreño |
+| admin.html | Inicio del sistema | inicio.jpeg | Luis Sebastian Echavez Carreño |
+| login.html | Inicio de sesión | login.jpeg | Luis Sebastian Echavez Carreño |
+| inventario.html | Inventario | inventario.jpeg | Luis Sebastian Echavez Carreño |
+| nuevo-producto.html | Registrar producto | registrar-producto.jpeg | Luis Sebastian Echavez Carreño |
+| ventas.html | Registrar venta | registrar-venta.jpeg | Luis Sebastian Echavez Carreño |
+| registro-ventas.html | Registro de ventas | registro-ventas.jpeg | Luis Sebastian Echavez Carreño |
+| usuarios.html | Usuarios | usuarios.jpeg | Erik Sebastian Gonzalez Estupiñan |
+| nuevo-usuario.html | Usuarios con formulario de alta | agregar-usuario.jpeg | Erik Sebastian Gonzalez Estupiñan |
+| editar-usuario.html | Editar usuario | Extensión del enlace Editar; sin captura propia | Erik Sebastian Gonzalez Estupiñan |
+| index.html | Bienvenida, equipo y módulos | Ejercicios 1–6 | Luis Sebastian Echavez Carreño |
+| registro.html | Registro académico | Ejercicio 7 | Erik Sebastian Gonzalez Estupiñan |
+| contacto.html | Contacto | Ejercicio 3 | Erik Sebastian Gonzalez Estupiñan |
+| multimedia.html | Video y mapa | Ejercicio 8 | Luis Sebastian Echavez Carreño |
+| proveedores.html | Proveedores | Pantalla adicional de NetBeans | Erik Sebastian Gonzalez Estupiñan |
+| nuevo-proveedor.html | Nuevo proveedor | Diálogo adicional de NetBeans | Erik Sebastian Gonzalez Estupiñan |
 
-## Decisiones de maquetado
+## Comparación con las ocho capturas
 
-- Se conservan los nombres de módulos, acciones y columnas presentes en NetBeans. Los diálogos de alta se representan como páginas HTML enlazadas.
-- Las tablas muestran un estado vacío; no se inventan registros reales ni se publican datos personales o contraseñas del SQL.
-- `registro.html` es el ejercicio académico con nombre, correo, contraseña, fecha de nacimiento, ciudad, tipo de usuario y aceptación de términos. No reemplaza el formulario de administración `nuevo-usuario.html`.
-- Los formularios tienen etiquetas, nombres, tipos y validación nativa. Usan POST y un ancla local como destino provisional. No existe backend web: enviar un formulario válido desde un servidor estático no guarda datos y puede responder 501. No se implementan autenticación, permisos ni eliminación real.
-- El SVG del encabezado es una identificación textual provisional. `img/referencia-login.png` es la imagen original de NetBeans, sin editar. No se afirma que estas imágenes hayan sido exportadas desde Figma.
-- El video incrustado es un ejemplo público de libre acceso (Big Buck Bunny). El mapa utiliza la Universidad de Pamplona, indicada por el usuario; se tomó como referencia su sede principal en Pamplona, Norte de Santander.
-- Los iframes dependen de Internet y de las políticas de YouTube y Google Maps. Sus títulos y el enlace alternativo del video permiten identificar su contenido.
+- Menú: INICIO, INVENTARIO, USUARIOS, Cerrar sesion y SALIR. Los ejercicios académicos tienen navegación adicional.
+- Inicio: bienvenida a ADMINISTRADOR1, cuatro enlaces de funciones y tres estadísticas con asteriscos. Se conserva «STACK BAJO» porque así aparece en la captura.
+- Login: Usuario, Contraseña e Iniciar. `admin1` es un placeholder ilustrativo, no un usuario autenticado ni una contraseña expuesta.
+- Inventario: Nombre, Categoria, Cantidad, Precio y Fecha vencimiento; ACTUALIZAR LISTA y regreso.
+- Producto: nombre, precio unitario, categoría, cantidad en stock y fecha de vencimiento; REGISTRAR PRODUCTO.
+- Venta: nombre del cliente, producto, cantidad y fecha; REGISTRAR VENTA.
+- Registro de ventas: Cliente, Producto, Cantidad, Costo y Fecha; ACTUALIZAR LISTA.
+- Usuarios: Usuario, Rol y Acciones. Admin1 tiene Editar; empleado1 y empleado2 tienen Editar y Borrar. Son los ejemplos de la captura, no datos del SQL. Borrar está deshabilitado porque no hay lógica de eliminación.
+- Alta de usuario: listado de fondo, cierre, nombre y tipo de usuario, Agregar. La superposición se representa con una sección en su propia página; CSS determinará el posicionamiento en la próxima actividad.
 
-## Pendiente de la entrega grupal
+## Recursos y alcance
 
-Confirmar el reparto con los integrantes, comparar las páginas con Figma y reemplazar los recursos provisionales con las exportaciones originales. La implementación está publicada en la rama `feature/maquetado-html` de GitHub. La apertura del Pull Request está pendiente: la API de GitHub respondió `Forbidden` en este entorno. La revisión cruzada debe realizarla un compañero.
+El logo usa los píxeles de la imagen original de NetBeans dentro de un viewport SVG embebido. No fue redibujado. Las capturas sirven como documentación: no reemplazan el HTML de campos o tablas.
+
+Los formularios tienen POST, etiquetas, nombres y validación nativa. No hay backend web, autenticación ni almacenamiento. En un servidor estático, enviar datos válidos puede responder 501. Las categorías y el producto de demostración son opciones ficticias porque las capturas no muestran las listas desplegadas. Las tablas con asteriscos conservan los placeholders del diseño.
+
+El mapa muestra la Universidad de Pamplona, sede principal, indicada por el usuario. El video de ejemplo es Big Buck Bunny; ambos recursos requieren Internet.
+
+La rama `feature/maquetado-html` está publicada en GitHub. La API responde `Forbidden`, por lo que la apertura automática del PR está bloqueada. Falta abrir el PR y que un compañero real lo revise. No se han creado ramas ni simulado revisiones en nombre de los integrantes.

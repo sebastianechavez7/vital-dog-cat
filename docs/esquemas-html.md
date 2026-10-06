@@ -30,7 +30,7 @@ main
 ```text
 main
 ├── section#panel → h1 + p + nav → ul → li → a
-├── section#funciones → h2 + ul → li → a
+│   └── nav (funciones) → ul → li → a
 └── aside.resumen-inventario → h2 + dl → dt + dd
 ```
 
@@ -40,7 +40,7 @@ main
 main
 ├── h1
 ├── nav (acciones) → ul → li → a (volver, actualizar, nuevo)
-├── p → button (eliminar, deshabilitado sin selección)
+├── tabla de usuarios → td → a (Editar) + button (Borrar deshabilitado)
 └── section#listado → h2 + table
     ├── caption
     ├── thead → tr → th[scope=col]
@@ -61,7 +61,7 @@ main
 └── p → a (regreso)
 ```
 
-Las altas son `nuevo-producto.html`, `nuevo-usuario.html` y `nuevo-proveedor.html`. `ventas.html` usa el mismo esquema como extensión del módulo de ventas.
+Las altas son `nuevo-producto.html`, `nuevo-usuario.html` y `nuevo-proveedor.html`. `ventas.html` sigue la captura de registro de venta. `editar-usuario.html` reutiliza el formulario de nombre y rol; `nuevo-usuario.html` incluye antes el listado que aparece detrás del formulario en la captura.
 
 ## Contacto: contacto.html
 

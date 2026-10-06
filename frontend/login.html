@@ -6,48 +6,34 @@
     <title>Inicio de sesión | Vital Dog Cat</title>
   </head>
   <body>
-    <!-- Encabezado y navegación principal -->
+    <!-- Identidad de la veterinaria -->
     <header id="encabezado" class="encabezado">
-      <a href="index.html"><img src="img/logo.svg" alt="Vital Dog Cat: volver al inicio" width="240" height="60"></a>
-      <nav aria-label="Navegación principal">
+      <a href="index.html"><img src="img/logo.svg" alt="Logo original de Vital Dog Cat Veterinaria: volver al inicio" width="360" height="166"></a>
+      <nav aria-label="Navegación de acceso">
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="login.html" aria-current="page">Inicio de sesión</a></li>
-          <li><a href="registro.html">Registro</a></li>
-          <li><a href="admin.html">Panel principal</a></li>
-          <li><a href="inventario.html">Inventario</a></li>
-          <li><a href="usuarios.html">Usuarios</a></li>
-          <li><a href="proveedores.html">Proveedores</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="multimedia.html">Multimedia</a></li>
+          <li><a href="index.html">Volver al inicio</a></li>
         </ul>
       </nav>
     </header>
-    <!-- Contenido principal -->
+    <!-- Inicio de sesión -->
     <main id="contenido" class="contenido">
-      <h1>Inicio de sesión</h1>
       <section id="inicio-sesion" class="seccion-formulario">
-        <h2>Datos de acceso</h2>
-        <p>Maqueta de práctica: este formulario todavía no guarda datos. Use datos ficticios.</p>
+        <h1>Inicio de sesión</h1>
         <form action="#inicio-sesion" method="post">
           <fieldset>
             <legend>Datos de acceso</legend>
             <p>
               <label for="usuario">Usuario</label>
-              <input type="text" id="usuario" name="usuario" autocomplete="username" required>
+              <input type="text" id="usuario" name="usuario" placeholder="admin1" autocomplete="username" required>
             </p>
             <p>
               <label for="contrasenia">Contraseña</label>
               <input type="password" id="contrasenia" name="contrasenia" autocomplete="current-password" required>
             </p>
           </fieldset>
-          <p>
-            <button type="submit">INICIAR</button>
-            <button type="reset">Limpiar</button>
-          </p>
+          <p><button type="submit">Iniciar</button></p>
         </form>
       </section>
-      <p><a href="registro.html">Registrarse</a> · <a href="index.html">Volver al inicio</a></p>
     </main>
     <!-- Pie de página -->
     <footer class="pie-pagina">

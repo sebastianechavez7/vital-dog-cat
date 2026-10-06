@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agregar usuario | Vital Dog Cat</title>
+    <title>Editar usuario | Vital Dog Cat</title>
   </head>
   <body>
     <!-- Encabezado del prototipo -->
@@ -22,41 +22,9 @@
     <!-- Contenido de la pantalla -->
     <main id="contenido" class="contenido">
       <h1>USUARIOS</h1>
-      <section id="listado" class="seccion-listado">
-        <h2>Listado de usuarios</h2>
-        <table>
-          <caption>Usuarios y roles</caption>
-          <thead>
-            <tr>
-              <th scope="col">Usuario</th>
-              <th scope="col">Rol</th>
-              <th scope="col">Acciones</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Admin1</td>
-              <td>Administrador</td>
-              <td><a href="editar-usuario.html?usuario=Admin1">Editar</a></td>
-            </tr>
-            <tr>
-              <td>empleado1</td>
-              <td>Empleado</td>
-              <td><a href="editar-usuario.html?usuario=empleado1">Editar</a> <button type="button" disabled>Borrar</button></td>
-            </tr>
-            <tr>
-              <td>empleado2</td>
-              <td>Empleado</td>
-              <td><a href="editar-usuario.html?usuario=empleado2">Editar</a> <button type="button" disabled>Borrar</button></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <!-- Formulario superpuesto del prototipo, representado como una sección HTML -->
-      <section id="agregar-usuario" class="seccion-formulario">
-        <h2>Agregar usuario</h2>
-        <p><a href="usuarios.html" aria-label="Cerrar el formulario y volver a usuarios">×</a></p>
-        <form id="alta-usuario" class="formulario" action="#alta-usuario" method="post">
+      <section id="editar-usuario" class="seccion-formulario">
+        <h2>Editar usuario</h2>
+        <form id="edicion-usuario" class="formulario" action="#edicion-usuario" method="post">
           <fieldset>
             <legend>Datos del usuario</legend>
             <p>
@@ -72,11 +40,10 @@
               </select>
             </p>
           </fieldset>
-          <p><button type="submit">Agregar</button></p>
+          <p><button type="submit">Guardar</button></p>
         </form>
       </section>
-      <p><a href="usuarios.html">ACTUALIZAR LISTA</a> · <a href="nuevo-usuario.html">AGREGAR USUARIO</a></p>
-      <p><a href="admin.html">Volver</a></p>
+      <p><a href="usuarios.html">Cancelar y volver</a></p>
     </main>
     <!-- Pie de página -->
     <footer class="pie-pagina">

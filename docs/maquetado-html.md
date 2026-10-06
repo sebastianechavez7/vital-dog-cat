@@ -28,16 +28,16 @@ La entrega contiene únicamente HTML e imágenes, sin CSS ni JavaScript. La apar
 
 ## Verificación realizada
 
-- Las 14 páginas pasaron el **Nu HTML Checker** local, versión `26.10.6`, sin errores. Es el motor de validación HTML usado por el servicio del W3C; no se afirma que se haya enviado la entrega a la web del W3C.
-- Chromium abrió las 14 páginas y comprobó un solo `h1` y `main`, metadatos, identificadores únicos, imágenes cargadas y ausencia de CSS y JavaScript.
-- Se comprobaron 173 enlaces internos y 7 formularios con etiquetas y nombres de campo.
-- Los siete formularios bloquearon el envío vacío mediante la validación nativa del navegador.
+- Las 15 páginas pasaron el **Nu HTML Checker** local, versión `26.10.6`, sin errores. Es el motor de validación HTML usado por el servicio del W3C; no se afirma que se haya enviado la entrega a la web del W3C.
+- Chromium abrió las 15 páginas y comprobó un solo `h1` y `main`, metadatos, identificadores únicos, imágenes cargadas y ausencia de CSS y JavaScript.
+- Se comprobaron 138 enlaces internos y 8 formularios con etiquetas y nombres de campo.
+- Los ocho formularios bloquearon el envío vacío mediante la validación nativa del navegador.
 - En registro se verificaron datos ficticios válidos, rechazo de correo inválido y contraseña corta, y restablecimiento de campos, radios y términos.
 - La estructura se revisó con etiquetas correctamente anidadas e indentación de dos espacios.
 - El video y mapa externos no se incluyen en las comprobaciones de disponibilidad: requieren conexión y pueden estar sujetos a restricciones del proveedor.
 
 ## Alcance y pendientes
 
-Los formularios son maquetas: no hay backend web, persistencia ni inicio de sesión real en HTML. El proyecto Java adjunto no fue modificado. Las pantallas de ventas amplían los botones del panel que aún no tienen vistas implementadas en el ZIP.
+Los formularios son maquetas: no hay backend web, persistencia ni inicio de sesión real en HTML. El proyecto Java adjunto no fue modificado. Las ocho capturas suministradas están mapeadas en docs/pantallas.md y preservadas en docs/prototipo/.
 
-Falta comparar con Figma, reemplazar el identificador textual provisional por el logo exportado. El reparto de integrantes es propuesto; no se atribuyen aportes ni revisiones que no han ocurrido. La rama `feature/maquetado-html` está publicada en GitHub. No se pudo abrir el Pull Request desde este entorno porque la API respondió `Forbidden`. La apertura del PR y la revisión real por un compañero siguen pendientes.
+Se compararon las ocho capturas del prototipo y se utiliza el logo original del proyecto Java. El reparto de integrantes es propuesto; no se atribuyen aportes ni revisiones que no han ocurrido. La rama `feature/maquetado-html` está publicada en GitHub. No se pudo abrir el Pull Request desde este entorno porque la API respondió `Forbidden`. La apertura del PR y la revisión real por un compañero siguen pendientes.
