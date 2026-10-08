@@ -26,9 +26,3 @@ La entrega contiene exclusivamente HTML e imágenes, sin CSS ni JavaScript. La a
 | 7 | `registro.html` con nombre, correo, contraseña, fechá, ciudad, radios, términos y ambiente; campos enlazados con sus etiquetas. |
 | 8 | `multimedia.html` con video y mapa incrustados; comentarios que explican tres clases y un identificador. El mapa muerte la Universidad de Pamplona, sede principal. |
 | 9 | Inventario en `documentos/pantallas.md`, esquemas en `documentos/esquemas-html.md` y maquetado de pantallas enlazadas. |
-
-## Alcance y pendientes
-
-Los formularios son maquetas: no hay backend web, persistencia ni inicio de sesión real en HTML. El proyecto Java adjunto no fue modificado. Las ocho capturas suministradas están mapeadas en docs/pantallas.md y preservadas en docs/prototipo/.
-
-Se compara las ocho capturas del prototipo y se utiliza el logo original del proyecto Java. El reparto de integrantes es propuesto; no se atribuyen deportes ni revisiones que no han ocurrido. La rama `característica/maquetado-html` está publicada en GitHub. No se puede abrir el Pull Request desde este entorno porque la API respondió `Prohibido`. La apertura del PR y la revisión real por un compañero siguen pendientes.
